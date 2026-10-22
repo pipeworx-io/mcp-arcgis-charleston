@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-arcgis-charleston",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Charleston County GIS — Charleston County, South Carolina open geospatial data (ArcGIS).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-19d179e57c8e539f534bc6e6bce4b8ce990fd12c7417430321b32258da328302",
-    "sourceCommit": "351c40908821cfecc9bb2f5849d87bbfdbb26d75"
+    "sourceHash": "v1-56d842d1c781444f9e9915e04357a7ee25232e4863a033668787fdaf0cc14993",
+    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
   }
 }
