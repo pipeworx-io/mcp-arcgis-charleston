@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-arcgis-charleston",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Charleston County GIS — Charleston County, South Carolina open geospatial data (ArcGIS).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-arcgis-charleston": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-charleston"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-arcgis-charleston.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/arcgis-charleston",
   "pipeworx": {
-    "sourceHash": "v1-56d842d1c781444f9e9915e04357a7ee25232e4863a033668787fdaf0cc14993",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "arcgis-charleston",
+    "gatewaySlug": "arcgis-charleston",
+    "sourceHash": "v1-e1e948b2353e774650e7c4fef8012b1c5e7d3384ee6af22280c5e2b6e1f0e839",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
